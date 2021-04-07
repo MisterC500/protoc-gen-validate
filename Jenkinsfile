@@ -26,9 +26,10 @@ pipeline {
         GITHUB_TOKEN = credentials('github-token')
       }
 
-      /*steps {
-        sh 'curl -sL https://git.io/goreleaser | bash'
-      }*/
+      steps {
+        //sh 'curl -sL https://git.io/goreleaser | bash'
+        echo 'Release stage...'
+      }
     }
   }
 }
