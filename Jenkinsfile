@@ -5,14 +5,14 @@ pipeline {
     stage('Compile') {
       steps {
           echo 'Compile stage...'
-        //sh 'go build'
+          sh 'go build'
       }
     }
 
     stage('Test') {
       steps {
           echo 'Test stage...'
-        //sh 'go test ./...'
+          sh 'go test ./...'
       }
     }
 
