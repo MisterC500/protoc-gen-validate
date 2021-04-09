@@ -2,6 +2,7 @@ pipeline {
   agent any
   environment{
       GOPATH="/working_dir/go/bin"
+      PATH="${GOPATH}:$PATH"
   }
   stages {
     stage('Compile') {
