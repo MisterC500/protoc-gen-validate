@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment{
-      GOPATH="/working_dir/go/bin"
+      GOPATH="/working_dir/go/bin:$GOPATH"
   }
   stages {
     stage('Compile') {
@@ -13,7 +13,7 @@ pipeline {
 
     stage('Test') {
       steps {
-          echo 'Test stage...'
+          echo "Path is $GOPATH"
           //sh 'go test ./...'
       }
     }
