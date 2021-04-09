@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment{
-      GOPATH="/usr/local/go/bin"
+      GOPATH="/working_dir/go/bin"
   }
   stages {
     stage('Compile') {
