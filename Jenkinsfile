@@ -6,14 +6,14 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-          echo 'Path is $GOPATH'
+          sh 'echo "Path is $GOPATH"'
           //sh 'go build'
       }
     }
 
     stage('Test') {
       steps {
-          //echo 'Path is $GOPATH' 
+          echo 'Testing...' 
           //sh 'go test ./...'
       }
     }
