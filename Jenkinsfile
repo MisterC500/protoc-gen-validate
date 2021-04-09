@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-          echo '${GOPATH}'
+          echo ${GOPATH}
           //sh 'go build'
       }
     }
