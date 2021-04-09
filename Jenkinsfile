@@ -13,7 +13,7 @@ pipeline {
 
     stage('Test') {
       steps {
-          echo "Path is $GOPATH"
+          echo "Path is $GOPATH" 
           //sh 'go test ./...'
       }
     }
